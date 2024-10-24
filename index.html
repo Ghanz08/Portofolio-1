@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="sytle.css" />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><a href="">Ghani.portfolio;</a></div>
+      <ol>
+        <li class="active"><a href="">HOME</a></li>
+        <li><a href="#about-me">ABOUT ME</a></li>
+        <li><a href="#project">PROJECT</a></li>
+      </ol>
+    </nav>
+    <div id="profil">
+      <div class="profil-section">
+        <div class="profil-img"></div>
+        <data-aos= class="profil-text" data-aos-duration="1000" data-aos="fade-right" >
+          <p class="hello">Hello i'm a</p>
+          <h1>Backend Developer</h1>
+          <p class="name">Ghani Zulhusni Bahri</p>
+          <a href="./assets/Ghani Zulhusni Bahri-resume (2).pdf" target="_blank" class="cv">Download CV</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-me" data-aos-duration="1000" data-aos="fade-up">
+      <div class="about-me-container">
+        <div class="me-pict"></div>
+        <div class="me-desc">
+          <h2>Software Engineering Student</h2>
+          <p>
+            Hello i’m a a software engineer student at Universitas Gadjah Mada, My major is Teknologi Rekayasa Perangkat Lunak, and since SMK I have been pursuing that major. So yes, you could say that I have been involved a lot in the
+            world of IT
+          </p>
+          <div class="me-button">
+            <button class="contact-me">Contact Me</button>
+            <a target="_blank" href="http://www.linkedin.com/in/ghanizulhusni" class="linkedin sosmed"></a>
+            <a target="_blank" href="https://github.com/Ghanz08" class="github sosmed"></a>
+            <a target="_blank" href="https://www.instagram.com/zulhusnibahri_06" class="instagram sosmed"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="project">
+      <div class="project-container">
+        <h2>Latest Project</h2>
+        <div class="project-card">
+          <div class="card" data-aos-duration="1000" data-aos="fade-up">
+            <div class="card-img"></div>
+            <div class="card-desc">
+              <h3>PicEase</h3>
+              <p>
+                PicEase adalah aplikasi galeri berbasis web yang dirancang untuk memudahkan pengguna dalam menyimpan, mengatur, dan menampilkan koleksi gambar mereka. Aplikasi ini menawarkan antarmuka yang intuitif dan responsif,
+                memungkinkan pengguna untuk mengunggah, mengelompokkan, serta mencari gambar dengan cepat.
+              </p>
+              <a href="https://github.com/Ghanz08/PicEase" target="_blank" class="card-button">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-aos-duration="1000" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-img-1"></div>
+            <div class="card-desc">
+              <h3>Lapor Saja!</h3>
+              <p>Lapor Saja! adalah website pengaduan masyarakat yang memudahkan pengguna untuk melaporkan masalah publik secara online, melacak status laporan, dan berinteraksi dengan pihak terkait untuk penanganan yang efektif.</p>
+              <a href="https://github.com/Ghanz08/pengaduan_masyarakat" target="_blank" class="card-button">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+          <div class="card" data-aos-duration="1000" data-aos="fade-up">
+            <div class="card-img-2"></div>
+            <div class="card-desc">
+              <h3>Plant Shop</h3>
+              <p>
+                Plant Shop adalah proyek website e-commerce berbasis pengguna dan admin yang menjual berbagai tanaman. Platform ini memungkinkan transaksi online menggunakan integrasi Midtrans (dummy) untuk pembayaran, serta menyediakan
+                fitur manajemen produk dan pesanan untuk admin.
+              </p>
+              <a href="https://github.com/Ghanz08/Plant-Shop" target="_blank" class="card-button">View Project <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="contact-me">
+      <div class="contact-container">
+        <div class="message">
+          <h2>Contact Me</h2>
+          <div class="message-box" data-aos-duration="1000" data-aos="fade-right">
+            <form action="">
+              <label for="name">name</label>
+              <input type="text" id="name" />
+              <label for="messagevalue">message</label>
+              <textarea itemid="messagevalue" name="" id=""></textarea>
+              <input type="submit" value="SUBMIT" />
+            </form>
+          </div>
+        </div>
+        <div id="map" data-aos-duration="1000" data-aos="fade-left"></div>
+      </div>
+    </div>
+
+    <footer>
+      <h2>Stay Connected</h2>
+      <p>&copy; 2024 Ghani Zulhusi Bahri. All rights reserved.</p>
+      <div class="social-icons">
+        <a target="_blank" href="http://www.linkedin.com/in/ghanizulhusni" class="linkedin"></a>
+        <a target="_blank" href="https://github.com/Ghanz08" class="github"></a>
+        <a target="_blank" href="https://www.instagram.com/zulhusnibahri_06" class="instagram"></a>
+      </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/978438a1fc.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      var map = L.map("map").setView([-7.801122762699335, 110.36600287622167], 12);
+
+      L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+        maxZoom: 19,
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+      }).addTo(map);
+
+      var marker = L.marker([-7.801122762699335, 110.36600287622167]).addTo(map);
+
+      marker.bindPopup("<b>Im here</b><br>I live in Yogyakarta.").openPopup();
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>
