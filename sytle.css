@@ -20,7 +20,6 @@ nav {
   font-family: "Poppins", serif;
 }
 
-
 nav ol {
   display: flex;
   flex-direction: row;
@@ -212,7 +211,7 @@ nav a {
   height: 30px;
   /* background-color: white; */
   margin-right: 10px;
-  border-radius: 10px;
+  border-radius: 5px;
   background-size: cover;
   transition: all 0.2s ease;
 }
@@ -229,7 +228,7 @@ nav a {
 }
 .me-button .instagram {
   background-image: url(./assets/instagram.png);
-  background-color: #fff;
+  background-color: #ffffff;
 }
 
 #project {
@@ -384,6 +383,38 @@ nav a {
   .project-container h2 {
     font-size: 2em;
   }
+
+  .about-me-container {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .me-pict {
+    width: 100%;
+    height: auto;
+  }
+
+  .me-desc {
+    width: 100%;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  nav .logo {
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  nav ol {
+    flex-direction: column;
+    gap: 20px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -399,6 +430,27 @@ nav a {
 
   .project-card .card-img {
     height: 180px;
+  }
+
+  .about-me-container {
+    padding: 10px;
+  }
+
+  .me-pict {
+    width: 100%;
+    height: 200px;
+  }
+
+  .me-desc h2 {
+    font-size: 1.5em;
+  }
+
+  nav {
+    padding: 10px;
+  }
+
+  nav ol a {
+    font-size: 1em;
   }
 }
 
@@ -426,6 +478,7 @@ nav a {
   height: fit-content;
   border-radius: 20px;
   padding: 50px 40px;
+  box-shadow: 0px 8px 20px #b69121;
 }
 
 .message-box form label {
@@ -448,7 +501,7 @@ nav a {
   margin-bottom: 60px;
 }
 
-.contact-container h2::before {
+contact-container h2::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -492,6 +545,7 @@ form input[type="submit"]:hover {
   height: 450px;
   background-color: white;
   border-radius: 20px;
+  box-shadow: 0px 8px 20px #b69121;
   margin-top: 100px;
 }
 
