@@ -19,7 +19,10 @@
   <body>
     <nav>
       <div class="logo"><a href="">Ghani.portfolio;</a></div>
-      <ol>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"><i class="fa-solid fa-bars fa-2xl" style="color: #b69b43;"></i></span>
+      </button>
+      <ol class="nav-links">
         <li class="active"><a href="">HOME</a></li>
         <li><a href="#about-me">ABOUT ME</a></li>
         <li><a href="#project">PROJECT</a></li>
@@ -141,6 +144,14 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
+    </script>
+    <script>
+      const navToggle = document.querySelector(".nav-toggle");
+      const navLinks = document.querySelector(".nav-links");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("nav-links_visible");
+      });
     </script>
   </body>
 </html>

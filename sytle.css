@@ -415,6 +415,81 @@ nav a {
     flex-direction: column;
     gap: 20px;
   }
+
+  .profil-section {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .profil-section .profil-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .profil-section .profil-text {
+    align-items: center;
+    text-align: center;
+  }
+
+  .profil-section .profil-text .cv {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .contact-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .contact-container .message {
+    width: 90%;
+  }
+
+  #map {
+    width: 90%;
+    height: auto;
+  }
+
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    width: 100%;
+    background-color: #0b090a;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.nav-links_visible {
+    display: flex;
+    transform: translateY(0);
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-links a {
+    font-size: 1.2em;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 480px) {
@@ -451,6 +526,36 @@ nav a {
 
   nav ol a {
     font-size: 1em;
+  }
+
+  .profil-section .profil-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .profil-section .profil-text h1 {
+    font-size: 3em;
+  }
+
+  .profil-section .profil-text .hello {
+    font-size: 0.8em;
+  }
+
+  .profil-section .profil-text .cv {
+    padding: 8px 16px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  .contact-container .message {
+    width: 100%;
+  }
+
+  #map {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -612,5 +717,75 @@ footer .social-icons .instagram {
 
   footer p {
     font-size: 0.8em; /* Mengurangi ukuran font paragraf */
+  }
+}
+
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.nav-toggle .hamburger-icon {
+  font-size: 1.5em;
+  color: #fff;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+  gap: 40px;
+  transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: flex;
+    position: absolute;
+    right: 20px;
+    margin-right: 20px;
+    margin-bottom: 16px;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 20px;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    background-color: #0b090a00;
+    padding: 20px;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease;
+  }
+
+  .nav-links.nav-links_visible {
+    display: flex;
+    transform: translateY(0);
+    animation: slideDown 0.3s ease forwards;
+  }
+
+  .nav-links a {
+    font-size: 1.2em;
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
